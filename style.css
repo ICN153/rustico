@@ -259,33 +259,115 @@ input[type="submit"] {
   font-weight: 400;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  .container {
+    display: block;
+  }
+
+  .header img {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 1124px) {
   .menu {
-    display: none;
+    /* display: none; */
+    width: 100%;
+    height: 100hv - 100px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-100vh);
+  }
+
+  .menu a {
+    padding: 25px 15px;
+    margin: 0;
+    padding-left: 15px;
+  }
+
+  .bar {
+    width: 40px;
+    height: 3px;
+    background-color: var(--primary);
+    margin-bottom: 3px;
+  }
+}
+
+@media (max-width: 1124px) {
+  .inicio {
+    background-position: top center;
+    word-wrap: break-word;
   }
 
   .inicio h1 {
     font-size: 36px;
+    margin-left: 15px;
+    word-wrap: break-word;
   }
-
   .inicio p {
     font-size: 18px;
+    margin-left: 15px;
+  }
+
+  .inicio a {
+    margin-left: 15px;
   }
 
   .inicio img {
-    display: none;
+    margin-left: 15px;
+    align-items: center;
+    padding: 14px;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .Presentation h2 {
     font-size: 36px;
+    overflow: hidden;
   }
 
   .Presentation p {
     font-size: 18px;
+    overflow-x: hidden;
   }
-.Presentation img{
+
+  .Presentation img {
     display: none;
+  }
 }
+
+@media (max-width: 1023px) {
+  .planos h2 {
+    font-size: 36px;
+    margin-right: 600px;
+  }
+
+  .flex-cards {
+    flex-direction: column;
+    row-gap: 40px;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 450px;
+  }
 }
+
+@media (max-width: 532px) {
+  .comment h3 {
+    font-size: 20px;
+    margin-right: 600px;
+  }
+
+  .comment p {
+    margin-right: 600px;
+  }
+
+  .comment img {
+    margin-right: 600px;
+  }
+}
+
