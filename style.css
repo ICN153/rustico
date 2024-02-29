@@ -355,6 +355,7 @@ input[type="submit"] {
     .news {
       margin: 0; /* Centraliza o formulário na página  */
       padding: 20px; /* Adiciona um espaçamento interno ao formulário */
+      overflow-y: hidden;
     }
 
     label {
@@ -366,6 +367,7 @@ input[type="submit"] {
       max-width: 100%; /* Faz com que os campos de texto e o botão ocupem toda a largura disponível */
       margin-bottom: 15px; /* Adiciona um espaçamento interno aos campos de texto e botão */
       box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+      overflow-y: hidden;
     }
   }
 }
