@@ -39,7 +39,7 @@ p {
   color: var(--color);
 }
 .container {
-  width: 1140px;
+  max-width: 1140px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -143,11 +143,7 @@ p {
   display: flex;
   column-gap: 24px;
 }
-.card {
-  border: 1px solid transparent;
-  border-radius: var(--rounded);
-  padding: 30px;
-}
+
 .planos h2 {
   text-align: center;
   font-size: 48px;
@@ -225,7 +221,7 @@ p {
 input[type="text"] {
   width: 451px;
   height: 20px;
-  color: var(--color);
+  color: black;
   border-color: transparent;
   margin: 0 15px;
 }
@@ -294,14 +290,13 @@ input[type="submit"] {
     background-color: var(--primary);
     margin-bottom: 3px;
   }
+
+  .btn-menu {
+    padding: 15px;
+  }
 }
 
-@media (max-width: 1124px) {
-  .inicio {
-    background-position: top center;
-    word-wrap: break-word;
-  }
-
+@media (max-width: 1280px) {
   .inicio h1 {
     font-size: 36px;
     margin-left: 15px;
@@ -317,21 +312,17 @@ input[type="submit"] {
   }
 
   .inicio img {
-    margin-left: 15px;
-    align-items: center;
-    padding: 14px;
+    width: 100%;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   .Presentation h2 {
-    font-size: 36px;
-    overflow: hidden;
+    font-size: 30px;
   }
 
   .Presentation p {
-    font-size: 18px;
-    overflow-x: hidden;
+    font-size: 15px;
   }
 
   .Presentation img {
@@ -339,35 +330,36 @@ input[type="submit"] {
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .planos h2 {
-    font-size: 36px;
-    margin-right: 600px;
+    font-size: 35px;
   }
 
   .flex-cards {
     flex-direction: column;
     row-gap: 40px;
-    justify-content: center;
+    align-items: center;
   }
 
-  .card {
-    max-width: 450px;
+  .card img {
+    width: 100%;
   }
-}
 
-@media (max-width: 532px) {
   .comment h3 {
-    font-size: 20px;
-    margin-right: 600px;
+    font-size: 24px;
   }
 
-  .comment p {
-    margin-right: 600px;
-  }
+  @media (max-width: 810px) {
+    .news {
+      padding: 20px;
+    }
 
-  .comment img {
-    margin-right: 600px;
+    input[type="text"],
+    input[type="submit"] {
+      max-width: 100%; /* Ocupar todo o tamanho todo */
+      padding: 0px; /* Os elementos sem espaçamento interno */
+      margin-bottom: 15px; /* Espaçamento entre os button */
+      box-sizing: border-box; /* Definir que o objeto é uma caixa */
+    }
   }
 }
-
