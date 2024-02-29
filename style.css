@@ -3,6 +3,7 @@ body {
   margin: 0;
   background-color: var(--primary);
   position: relative;
+  overflow-x: hidden;
 }
 :root {
   --primary: #473c38;
@@ -258,6 +259,7 @@ input[type="submit"] {
 @media (max-width: 768px) {
   .container {
     display: block;
+    overflow-x: scroll;
   }
 
   .header img {
@@ -351,15 +353,20 @@ input[type="submit"] {
 
   @media (max-width: 810px) {
     .news {
-      padding: 20px;
+      margin: 0; /* Centraliza o formulário na página  */
+      padding: 20px; /* Adiciona um espaçamento interno ao formulário */
+    }
+
+    label {
+      display: block; /* Faz com que as labels ocupem uma linha inteira */
     }
 
     input[type="text"],
     input[type="submit"] {
-      max-width: 100%; /* Ocupar todo o tamanho todo */
-      padding: 0px; /* Os elementos sem espaçamento interno */
-      margin-bottom: 15px; /* Espaçamento entre os button */
-      box-sizing: border-box; /* Definir que o objeto é uma caixa */
+      max-width: 100%; /* Faz com que os campos de texto e o botão ocupem toda a largura disponível */
+      margin-bottom: 15px; /* Adiciona um espaçamento interno aos campos de texto e botão */
+      box-sizing: border-box; /* Garante que o padding não aumente a largura total */
     }
   }
 }
+
