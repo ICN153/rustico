@@ -3,7 +3,7 @@ body {
   margin: 0;
   background-color: var(--primary);
   position: relative;
-  overflow-x: hidden;
+ 
 }
 :root {
   --primary: #473c38;
@@ -280,10 +280,19 @@ input[type="submit"] {
     transform: translateY(-100vh);
   }
 
+  .menu-open{
+    transform: translateX(0);
+  }
+
   .menu a {
     padding: 25px 15px;
     margin: 0;
     padding-left: 15px;
+  }
+
+  .menu a:active{
+    background-color: crimson;
+    color: #b2935b;    
   }
 
   .bar {
@@ -291,7 +300,23 @@ input[type="submit"] {
     height: 3px;
     background-color: var(--primary);
     margin-bottom: 3px;
+    transition: 0.3s;
   }
+
+  .X .bar:first-child{
+    transform: rotate(50deg) translate(8px 8px);
+    transition-delay: 0,5s;
+  }
+
+.x .bar:last-child{
+  transform: rotate(-45deg) translate(3px, -3px);
+  transition-delay: 0.3s;
+}
+
+.x .bar:nth-child(2){
+  opacity: 0;
+  transform: translateX(-200px);
+}
 
   .btn-menu {
     padding: 15px;
@@ -314,7 +339,7 @@ input[type="submit"] {
   }
 
   .inicio img {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -355,7 +380,7 @@ input[type="submit"] {
     .news {
       margin: 0; /* Centraliza o formulário na página  */
       padding: 20px; /* Adiciona um espaçamento interno ao formulário */
-      overflow-y: hidden;
+      
     }
 
     label {
@@ -367,7 +392,7 @@ input[type="submit"] {
       max-width: 100%; /* Faz com que os campos de texto e o botão ocupem toda a largura disponível */
       margin-bottom: 15px; /* Adiciona um espaçamento interno aos campos de texto e botão */
       box-sizing: border-box; /* Garante que o padding não aumente a largura total */
-      overflow-y: hidden;
+            
     }
   }
 }
