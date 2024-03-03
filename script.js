@@ -1,11 +1,14 @@
 //alert('js carregado');
 
-var btnMenu = document.querySelector('.btn-menu');
-var menu = document.querySelector('.menu');
+var btnMenu = document.querySelector(".btn-menu");
+var menu = document.querySelector(".menu");
 
-btnMenu.addEventListener('click', function(){
+btnMenu.addEventListener("click", function () {
+  menu.classList.toggle("menu-open");
+  btnMenu.classList.toggle;
+});
 
-    menu.classList.toggle('menu-open');
-    btnMenu.classList.toggle
-}
-)
+menu.addEventListener("click", function () {
+  menu.classList.remove(menu-open);
+  menu.classList.remove("x");
+});
