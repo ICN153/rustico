@@ -277,11 +277,10 @@ input[type="submit"] {
   .menu {
     /* display: none; */
     background-image: linear-gradient(var(--bg), var(--background));
-    width: 100%;
+    max-width: 100%;
     width: calc(100vh - 100px);
-    height: 772px;
+    height: 100%;
     position: absolute;
-    left: 0;
     top: 100px;
     display: flex;
     flex-direction: column;
@@ -294,7 +293,7 @@ input[type="submit"] {
   }
 
   .menu a {
-    width: 100%;
+    max-width: 100%;
     padding: 25px 15px;
     margin: 0;
     padding-left: 15px;
