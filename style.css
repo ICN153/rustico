@@ -279,7 +279,7 @@ input[type="submit"] {
     background-image: linear-gradient(var(--bg), var(--background));
     max-width: 100%;
     width: calc(100vh - 100px);
-    height: 100%;
+    height: 836px;
     position: absolute;
     top: 100px;
     display: flex;
@@ -296,12 +296,14 @@ input[type="submit"] {
     max-width: 100%;
     padding: 25px 15px;
     margin: 0;
-    padding-left: 15px;
+    padding-left: 15px; 
     border-bottom: 1px solid var(--cont);
     color: var(--black);
   }
 
   .menu a:active {
+    
+    background-color: #473c38;
     color: var(--background);
   }
 
