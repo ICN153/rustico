@@ -18,6 +18,7 @@ body {
   --rounded: 3px;
   --background: #b2935b;
   --black: #000000;
+  --corals: #c2b19c;
   --section-space: 100px;
 }
 h1,
@@ -102,6 +103,19 @@ p {
   display: flex;
   align-items: center;
   column-gap: 24px;
+}
+
+.btn {
+  background-color: var(--corals);
+  font-size: 13px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 3px;
+  display: inline-block;
+  transition: calc(0.3s);
+}
+
+.btn:hover {
+  transform: scale(0.95);
 }
 .Presentation {
   background-color: var(--bland);
@@ -336,14 +350,20 @@ input[type="submit"] {
 }
 
 @media (max-width: 1280px) {
+  .inicio {
+    flex-direction: column;
+    row-gap: 24px;
+  }
   .inicio h1 {
-    font-size: 36px;
-    margin-left: 15px;
-    word-wrap: break-word;
+    font-weight: 36px;
+    font-size: 32px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
   }
   .inicio p {
-    font-size: 18px;
-    margin-left: 15px;
+    font-weight: 24px;
+    font-size: 16px;
+    text-align: center;
   }
 
   .inicio a {
@@ -353,6 +373,7 @@ input[type="submit"] {
   .inicio img {
     max-width: 100%;
     padding: 24px;
+    align-items: center;
   }
 }
 
