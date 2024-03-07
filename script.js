@@ -5,7 +5,7 @@ var menu = document.querySelector(".menu");
 
 btnMenu.addEventListener("click", function () {
   menu.classList.toggle("menu-open");
-  btnMenu.classList.toggle;
+  btnMenu.classList.toggle('x');
 });
 
 menu.addEventListener("click", function () {

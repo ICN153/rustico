@@ -3,15 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Primary Meta Tags -->
+<title>Projeto Rústico utilizando HTML, CSS e JAVASCRIPT</title>
+<meta name="title" content="Meta Tags — Preview, Edit and Generate" />
+<meta name="description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://metatags.io/" />
+<meta property="og:title" content="Meta Tags — Preview, Edit and Generate" />
+<meta property="og:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://metatags.io/" />
+<meta property="twitter:title" content="Meta Tags — Preview, Edit and Generate" />
+<meta property="twitter:description" content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+<!-- Meta Tags Generated with https://metatags.io -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="Imagem/logo-rustico-2 (1).svg" type="image/x-icon">
     
-
-
+    <link rel="stylesheet" href="style.css">
+    
     <title>Rustico</title>
+    
 </head>
 <body>
       <div class="header">
@@ -35,19 +59,19 @@
         
         </div>
         </div>
-        <div class="container inicio" >
+        <div class="container inicio">
             
-                <div class="content" data-aos="fade-up" data-aos-delay="400">
+                <div class="content">
                     <h1>A maior rede de móveis rústicos do Brasil</h1>
                     <p>Vivamus accumsan nec quam nec interdum. Donec ac fringlla<br> elit. Fusce et vestibulum nisl. Nam eu augue in dolor dictum.</p>
                     <a href="#Loren Ipsun" class="btn">Loren Ipsun</a>
                 </div>
-                <div class="image"data-aos="fade-right" data-aos-duration="500"></div>
-                    <img src="Imagem/cama-rustica.png" alt="">
+                <div class="image">
+                    <img src="Imagem/cama-rustica.png"  alt="">
                 </div>
             </div>
         </div>
-        <div class="Presentation">
+        <div class="Presentation" id="Quem Somos">
             <div class="container">
               <div class="content">
                 <h2>Da nossa fábrica direto para sua casa!</h2>
@@ -60,7 +84,7 @@
          
         </div> 
     </div>
-            <div class=" planos">
+            <div class=" planos" id="Catálago">
                 <div class="container">
                 <h2>Madeiras certificadas</h2>
                 <div class="flex-cards">
@@ -93,7 +117,7 @@
         </div>
     </div>
     </div> 
-    <div class="comment">
+    <div class="comment" id="Área do Cliente">
         <div class="container">
            <div class="icons">
             <img src="Imagem/icon.svg" alt="">
@@ -103,7 +127,7 @@
         </div>
     </div>
 
-    <div class="news">
+    <div class="news" id="Fale Conosco">
         <div class="container">
             
             <label for="inome"></label>
@@ -133,8 +157,16 @@
                 <h4>Lorem Ipsum</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit. Sed eget metus at neque consectetur rhoncus ut congue eros.</p>
             </div>
+            
         </div>
     </div>
     <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init();
+      </script>
+
     </body>
 </html>
