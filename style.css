@@ -293,7 +293,7 @@ input[type="submit"] {
   .menu {
     /* display: none; */
     background-color: var(--clarck);
-    max-width: 100%;
+    width: 100%;
     width: calc(100vh - 100px);
     height: 860px;
     position: absolute;
@@ -310,7 +310,6 @@ input[type="submit"] {
   }
 
   .menu a {
-    max-width: 100%;
     padding: 25px 15px;
     margin: 0;
     padding-left: 15px;
