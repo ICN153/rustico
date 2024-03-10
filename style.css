@@ -30,6 +30,11 @@ h5,
 h6 {
   margin: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: var(--primary);
@@ -293,9 +298,9 @@ input[type="submit"] {
   .menu {
     /* display: none; */
     background-color: var(--clarck);
-    width: 100%;
+    max-width: 100%;
     width: calc(100vh - 100px);
-    height: 860px;
+    min-height: 24%;
     position: absolute;
     top: 100px;
     display: flex;
