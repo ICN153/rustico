@@ -302,6 +302,7 @@ input[type="submit"] {
     flex-direction: column;
     transform: translateX(-100vh);
     transition: 0.5s;
+    z-index: 100;
   }
 
   .menu-open {
@@ -369,12 +370,14 @@ input[type="submit"] {
     font-style: normal;
     font-size: 16px;
     text-align: center;
+    padding-bottom: 20px;
   }
 
   .inicio img {
-    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top: 24px;
   }
 
   .btn {
