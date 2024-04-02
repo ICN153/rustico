@@ -3,6 +3,7 @@ body {
   margin: 0;
   background-color: var(--primary);
   position: relative;
+  overflow-x: hidden;
 }
 :root {
   --primary: #473c38;
@@ -55,6 +56,9 @@ p {
   font-weight: 400;
 }
 .header {
+  z-index: 500;
+  position: sticky;
+  top: 0;
   background-color: var(--bland);
   padding-top: 10px;
   padding-bottom: 10px;
@@ -298,15 +302,15 @@ input[type="submit"] {
   .menu {
     /* display: none; */
     background-color: var(--clarck);
-    max-width: 100%;
-    width: calc(100vh - 100px);
-    height: 19%;
+    
+   width: 100%;
+    height: 435px;
     position: absolute;
     top: 100px;
     display: flex;
     flex-direction: column;
-    transform: translateX(-100vh);
-    transition: 0.5s;
+    transform: translatey(-100vh);
+    transition: 0.7s;
     z-index: 100;
   }
 
